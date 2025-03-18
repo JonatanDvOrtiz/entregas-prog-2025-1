@@ -1,23 +1,39 @@
-#Ejercicio 1: calculadora básica
-f1= int (input("escriba un numero entero "))
-f2= int(input("escriba otro numero entero "))
 
-resultado= f1+f2
+"""
+Título de práctica: Calculadora1
 
-#print#
-print(f"La suma de {f1} y {f2} es {resultado}")
+Calculadora con selección de operación
 
-resultado= f1-f2
+Autor: ElAutor <jdortizc3@academia.usbbog.edu.co>
+Fecha: 2025-03-13
+"""
+numero1 = int(input("Introduzca el primer número"))
+numero2 = int(input("Introduzca el segundo número"))
 
-#print#
-print(f"La resta de {f1} y {f2} es {resultado}")
+eleccion = 0
+while eleccion !=6:
+    print("""
+            Indique la operación a relizar:
+         seleccione 1)Sumar
+         seleccione 2)Restar
+         seleccione 3)Multiplicar
+         seleccione 4)Dividir
+          
+    """)
+    eleccion = int(input())
+    if eleccion == 1:
+        print(" ")
+        print("Resultado: ",numero1,"+",numero2,"=",numero1+numero2)
+    elif eleccion == 2:
+        print(" ")
+        print("Resultado: ",numero1,"-",numero2,"=",numero1-numero2)
+    elif eleccion == 3:
+        print(" ")
+        print("Resultado: ",numero1,"x",numero2,"=",numero1*numero2)
+    elif eleccion == 4:
+        print(" ")
+        print("Resultado: ",numero1,"/",numero2,"=",numero1/numero2)   
+    elif eleccion == 5:
+        print(" ")
+        print("Resultado: ",numero1,"-",numero2,"=",numero1-numero2)    
 
-resultado= f1*f2
-
-#print#
-print(f"La multiplicación de {f1} y {f2} es {resultado}")
-
-resultado= f1/f2
-
-#print#
-print(f"La división de {f1} y {f2} es {resultado}")
