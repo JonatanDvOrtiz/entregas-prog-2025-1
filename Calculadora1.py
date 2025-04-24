@@ -1,4 +1,3 @@
-
 """
 Título de práctica: Calculadora1
 
@@ -7,12 +6,10 @@ Calculadora con selección de operación
 Autor: ElAutor <jdortizc3@academia.usbbog.edu.co>
 Fecha: 2025-03-13
 """
-numero1 = int(input("Introduzca el primer número"))
-numero2 = int(input("Introduzca el segundo número"))
-
-eleccion = 0
-while eleccion !=6:
-    print("""
+# Ingreso de operandos
+num1 = float(input("Ingrese el primer operando: "))
+num2 = float(input("Ingrese el segundo operando: "))
+operador = input("""
             Indique la operación a relizar:
          seleccione 1)Sumar
          seleccione 2)Restar
@@ -20,20 +17,20 @@ while eleccion !=6:
          seleccione 4)Dividir
           
     """)
-    eleccion = int(input())
-    if eleccion == 1:
-        print(" ")
-        print("Resultado: ",numero1,"+",numero2,"=",numero1+numero2)
-    elif eleccion == 2:
-        print(" ")
-        print("Resultado: ",numero1,"-",numero2,"=",numero1-numero2)
-    elif eleccion == 3:
-        print(" ")
-        print("Resultado: ",numero1,"x",numero2,"=",numero1*numero2)
-    elif eleccion == 4:
-        print(" ")
-        print("Resultado: ",numero1,"/",numero2,"=",numero1/numero2)   
-    elif eleccion == 5:
-        print(" ")
-        print("Resultado: ",numero1,"-",numero2,"=",numero1-numero2)    
+#Ejecuta operación indicada
+if operador == '1':
+    resultado = num1 + num2
+    print(f"El resultado de {num1} + {num2} es {resultado}")
+elif operador == '2':
+    resultado = num1 - num2
+    print(f"El resultado de {num1} - {num2} es {resultado}")
+elif operador == '3':
+    resultado = num1 * num2
+    print(f"El resultado de {num1} * {num2} es {resultado}")
+elif operador == '4':
+    if num2 != 0:
+        resultado = num1 / num2
+        print(f"El resultado de {num1} / {num2} es {resultado}")
+    else:
+        print("Error: No se puede dividir entre cero.") 
 
