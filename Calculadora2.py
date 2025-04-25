@@ -8,10 +8,9 @@ Fecha: 2025-03-20
 """
 print("Calculadora básica")
 
-for _ in range(1000):  # Bucle
-    # Ingreso de operandos
-    num1 = float(input("Ingrese el primer operando: "))
-    num2 = float(input("Ingrese el segundo operando: "))
+for _ in range(1000):  # Un rango grande para permitir múltiples operaciones
+    # Convertimos las entradas a números
+
     operador = input("""
             Indique la operación a realizar:
          seleccione 1) Sumar
@@ -22,7 +21,9 @@ for _ in range(1000):  # Bucle
          seleccione 6) Módulo
          seleccione 7) Salir    
     """)
-    #Ejecuta operación indicada
+    num1 = float(input("Ingrese el primer operando: "))
+    num2 = float(input("Ingrese el segundo operando: "))
+
     if operador == '1':
         resultado = num1 + num2
         print(f"El resultado de {num1} + {num2} es {resultado}")
@@ -46,6 +47,5 @@ for _ in range(1000):  # Bucle
         print(f"El módulo de {num1} % {num2} es {resultado}")
     elif operador == '7':
         print("Saliendo del programa.")
-        break
     else:
         print("Opción no válida.")
