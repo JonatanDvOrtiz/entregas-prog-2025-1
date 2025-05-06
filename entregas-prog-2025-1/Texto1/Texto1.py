@@ -1,3 +1,10 @@
+"""
+Título de práctica: Texto1
+
+Editor de textos
+Autor: ElAutor <jdortizc3@academia.usbbog.edu.co>
+Fecha: 2025-05-05
+"""
 def mostrar_menu():
     print("> Escriba 1 para pasar a minúsculas, ")
     print(">         2 para pasar a mayúsculas, ")
