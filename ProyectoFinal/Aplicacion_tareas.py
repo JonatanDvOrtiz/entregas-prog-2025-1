@@ -1,6 +1,11 @@
-# =======================
-# PROGRAMA DE TAREAS EN PYTHON
-# =======================
+"""
+Título de práctica: Aplicacion_tareas
+
+Sistema para organizar tareas
+
+Autor: Jonatan Ortiz <jdortizc3@academia.usbbog.edu.co>
+Fecha: 2025-05-22
+"""
 
 # Bibliotecas utilizadas:
 # ------------------------
@@ -9,8 +14,8 @@
 # - os: Para ejecutar comandos del sistema como limpiar la pantalla.
 #       Documentación: https://docs.python.org/3/library/os.html
 
-import datetime  # Para obtener la fecha actual de las tareas
-import os        # Para limpiar la consola (solo en algunos sistemas operativos)
+import datetime  
+import os        
 
 # Lista para guardar las tareas
 tareas = []
