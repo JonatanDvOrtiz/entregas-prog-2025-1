@@ -5,6 +5,7 @@ Editor de textos
 Autor: ElAutor <jdortizc3@academia.usbbog.edu.co>
 Fecha: 2025-05-05
 """
+
 def mostrar_menu():
     print("> Escriba 1 para pasar a minúsculas, ")
     print(">         2 para pasar a mayúsculas, ")
@@ -15,6 +16,9 @@ def mostrar_menu():
     print(">         7 para mostrar texto original.")
     print(">         8 para salir.")
     print(">         9 para elegir otro texto.")
+
+def run():
+    print("Texto 1")
 
 def main():
     # === PARTE LIBRE ===
@@ -60,4 +64,5 @@ def main():
         print(f"> Resultado: {modificado}")
 
 if __name__ == "__main__":
+    run()
     main()
